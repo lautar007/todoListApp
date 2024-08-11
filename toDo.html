@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List.</title>
+        <link rel="stylesheet" href="./toDo.css">
+    </head>
+    <body>
+        <div class="panContent">
+            <div class="decoCont">
+                <div style="background-color: #F29966;"></div>
+                <div style="background-color: #F2622E;"></div>
+                <div style="background-color: #F22D1B;"></div>
+            </div>
+            <div class="appCont">
+                <h1 class="title">To Do List.</h1>
+                <div class="logicCont">
+                    <div class="addCont">
+                        <h4>Add a new task:</h4>
+                        <div class="addForm">
+                            <input id="addInput" type="text" placeholder="What do you have to do?"/>
+                            <select id="addSelect">
+                                <option>Select Category</option>
+                                <option>BackEnd</option>
+                                <option>FrontEnd</option>
+                                <option>UX-UI</option>
+                                <option>DevOps</option>
+                                <option>Proyect</option>
+                            </select>
+                        </div>
+                        <button id="addBtn">ADD</button>
+                    </div>
+                    <div class="searchContent">
+                        <h4>Search a task</h4>
+                        <input id="searchInput" type="text" placeholder="Search a task by name"/>
+                        <button id="showAllBtn">Show All</button>
+                    </div>
+                </div>
+                <h2 class="title">Tasks list:</h2>
+                <div id="list">
+
+                </div>
+            </div>
+        </div>
+        <script src="./toDo.js"></script>
+    </body>
+</html>

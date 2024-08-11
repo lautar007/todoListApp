@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "norms_bl_it";
+    src: url("./fonts/TT\ Norms\ Pro\ Serif\ Trial\ Black\ Italic.ttf");
+}
+@font-face {
+    font-family: "norms_bl";
+    src: url("./fonts/TT\ Norms\ Pro\ Serif\ Trial\ Black.ttf");
+}
+@font-face {
+    font-family: "norms";
+    src: url("./fonts/TT\ Norms\ Pro\ Serif\ Trial\ Normal.ttf");
+}
+
+*{
+    font-family: "norms";
+}
+
+html{
+    background: linear-gradient(135deg, #032859 0%,#032859 60%,#4096ee 100%);
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+
+.panContent{
+    display: flex;
+    flex-direction: row;
+}
+.decoCont{
+    display: flex;
+    flex-direction: row;
+    width: 5%;
+}
+.decoCont div{
+    width: 33%;
+    height: 100%;
+}
+.appCont{
+    width: 95%;
+    height: 100vh;
+}
+
+.title{
+    font-family: "norms_bl_it";
+    color:#F9DAAC;
+    margin-left: 3vw;
+    size: 5vh;
+    z-index: 1;
+}
+
+.logicCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.addCont{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #44a1ff, #3a87d6);
+    box-shadow:  5px 5px 10px #001a35,
+             -5px -5px 10px #004175;
+    padding: 2vh;
+    width: 35vw;
+    height: 16vh;
+}
+.searchContent{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #44a1ff, #3a87d6);
+    box-shadow:  5px 5px 10px #001a35,
+             -5px -5px 10px #004175;
+    padding: 2vh;
+    width: 35vw;
+    height: 16vh;
+}
+
+.addCont h4{
+    color:#001a35;
+    margin: 0 0 1vh 0;
+    font-family: "norms_bl";
+    font-size: 3vh;
+}
+.searchContent h4{
+    color:#001a35;
+    margin: 0 0 1vh 0;
+    font-family: "norms_bl";
+    font-size: 3vh;
+}
+
+#addInput{
+    background-color: #F9DAAC;
+    border: none;
+    font-size: 2.5vh;
+    border-radius: 15px;
+    color: #032859;
+}
+#addSelect{
+    background-color: #F9DAAC;
+    border: none;
+    font-size: 2.5vh;
+    border-radius: 15px;
+    font-family: "norms_bl";
+    color: #004175;
+}
+
+#searchInput{
+    background-color: #F9DAAC;
+    border: none;
+    font-size: 2.5vh;
+    border-radius: 15px;
+    color: #032859;
+    width: 60%;
+}
+
+#addBtn{
+    margin: 2vh 0 0 auto;
+    padding: 1vh;
+    font-size: 2.8vh;
+    border: none;
+    border-radius: 15px;
+    background-color: #004175;
+    color: #F9DAAC;
+    font-family: 'norms_bl_it';
+    cursor:pointer;
+}
+#addBtn:hover{
+    border: 2px solid #F9DAAC;
+}
+
+#showAllBtn{
+    margin: 2vh 0 0 auto;
+    padding: 1vh;
+    font-size: 2.8vh;
+    border: none;
+    border-radius: 15px;
+    background-color: #004175;
+    color: #F9DAAC;
+    font-family: 'norms_bl_it';
+    cursor:pointer;
+}
+#showAllBtn:hover{
+    border: 2px solid #F9DAAC;
+}
+
+#list{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 0 1vw;
+}
+
+.taskCont{
+    display: flex;
+    flex-direction: column;
+    margin: 1vh;
+    padding: 2vh 1vh 1vh 2vh;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #000f1f;
+}
+.task-title{
+    background-color: #F9DAAC;
+    border-radius: 15px;
+    padding: 1px 5px;
+    margin: 0 0 1vh 0;
+    height: 40%;
+}
+.task-category{
+    margin: 0 0 1vh 0;
+}
+
+.deleteBtn{
+    margin: 1vh 0 0 auto;
+    padding: 1vh;
+    font-size: 2.3vh;
+    border: none;
+    border-radius: 15px;
+    background-color: #004175;
+    color: #F9DAAC;
+    font-family: 'norms_bl_it';
+    cursor:pointer;
+}
+.deleteBtn:hover{
+    border: 2px solid #F9DAAC;
+}
